@@ -1,4 +1,4 @@
-# reader.rb
+# {project_root}/classes/reader.rb
 class Reader
   attr_accessor :name, :email, :city, :street, :house
 

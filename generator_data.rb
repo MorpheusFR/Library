@@ -1,4 +1,4 @@
-# generator_data.rb
+# {project_root}/generator_data.rb
 require_relative 'classes/reader'
 require_relative 'classes/book'
 require_relative 'classes/author'

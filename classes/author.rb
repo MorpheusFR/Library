@@ -1,4 +1,4 @@
-# author.rb
+# {project_root}/classes/author.rb
 class Author
   attr_accessor :name, :biography
 
