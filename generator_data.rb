@@ -1,15 +1,16 @@
+# generator_data.rb
+require_relative 'classes/reader'
+require_relative 'classes/book'
+require_relative 'classes/author'
+require_relative 'classes/order'
+require_relative 'classes/library'
+
 module DataGenerator
 
-  def dataGenerator
+  def data_generate
     i = 1
     while i < 10
-      @readers << Reader.new(
-        "User#{i}",
-        "user#{i}@email.com",
-        "city#{i}",
-        "street#{i}",
-        "house#{i}"
-      )
+      @readers << Reader.new("User#{i}", "user#{i}@example.com", "city#{i}", "street#{i}", "house#{i}")
       i += 1
     end
     # 10 books
@@ -34,13 +35,16 @@ module DataGenerator
     @authors << Author.new('Артур Кларк', 'Bio Артур Кларк')
 
     # 4 orders
-    order_generator('Война миров', 4)
-    order_generator('Я, робот', 12)
-    order_generator('Нейромант', 3)
-    order_generator('Машина времени', 7)
+    @orders << Order.new("Война миров", "User1", "1.12.2018")
+    # order_generate('Война миров', 4)
+    # order_generate('Я, робот', 3)
+    # order_generate('Нейромант', 3)
+    # order_generate('Машина времени', 7)
+
   end
 
-  def order_generator(book, reader)
-    reader.times(@orders << Order.new("#{book}", "User#{rand(1..9)}", "#{rand(1..31)}.#{rand(1..12)}.#{rand(2016..2018)}"))
+  def order_generate(book, how_many)
+    puts(book, how_many)
+    how_many.times(@orders << Order.new("#{book}", "User#{rand(1..9)}", "#{rand(1..31)}.#{rand(1..12)}.#{rand(2016..2018)}"))
   end
 end

@@ -1,3 +1,4 @@
+# order.rb
 class Order
   attr_accessor :book, :reader, :date
 
@@ -5,6 +6,6 @@ class Order
     @book = book
     @reader = reader
     # @data = data
-    @data = date
+    @date = date
   end
 end
