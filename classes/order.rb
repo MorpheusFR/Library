@@ -1,4 +1,4 @@
-# order.rb
+# {project_root}/classes/order.rb
 class Order
   attr_accessor :book, :reader, :date
 

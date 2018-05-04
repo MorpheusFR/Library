@@ -1,3 +1,4 @@
+# {project_root}/run.rb
 require_relative './classes/library'
 require_relative './generator_data'
 
