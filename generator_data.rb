@@ -34,17 +34,19 @@ module DataGenerator
     @authors << Author.new('Робер Мерль', 'Bio Робер Мерль')
     @authors << Author.new('Артур Кларк', 'Bio Артур Кларк')
 
-    # 4 orders
-    @orders << Order.new("Война миров", "User1", "1.12.2018")
-    # order_generate('Война миров', 4)
-    # order_generate('Я, робот', 3)
-    # order_generate('Нейромант', 3)
-    # order_generate('Машина времени', 7)
+    # 4 orders generator in range order_count
+    # @orders << Order.new("Война миров", "User1", "1.12.2018")
+    order_generate("Война миров", 4)
+    order_generate('Я, робот', 3)
+    order_generate('Нейромант', 3)
+    order_generate('Машина времени', 7)
 
   end
 
-  def order_generate(book, how_many)
-    puts(book, how_many)
-    how_many.times(@orders << Order.new("#{book}", "User#{rand(1..9)}", "#{rand(1..31)}.#{rand(1..12)}.#{rand(2016..2018)}"))
+  def order_generate(book, order_count)
+    # puts(book, order_count)
+    order_count.times do
+      @orders << Order.new("#{book}", "User#{rand(1..9)}", "#{rand(1..31)}.#{rand(1..12)}.20#{rand(16..18)}")
+    end
   end
 end
