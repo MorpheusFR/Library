@@ -39,7 +39,7 @@ class Library
   end
 
   def often_takes_the_book
-    @orders.group_by(&:reader).sort_by{|reader, order| order.count}.reverse.dig(0)
+    @orders.group_by(&:reader).sort_by { |_reader, order| order.count }.reverse.dig(0)
   end
 
   def the_most_popular_book

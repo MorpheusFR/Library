@@ -52,72 +52,72 @@
     author: Артур Кларк
 - - !ruby/object:Order
     book: Война миров
-    reader: User8
-    date: 4.11.2016
+    reader: User5
+    date: 20.5.2017
   - !ruby/object:Order
     book: Война миров
-    reader: User3
-    date: 29.4.2018
-  - !ruby/object:Order
-    book: Война миров
-    reader: User3
-    date: 6.12.2016
+    reader: User4
+    date: 27.4.2018
   - !ruby/object:Order
     book: Война миров
     reader: User6
-    date: 5.1.2018
+    date: 8.1.2017
   - !ruby/object:Order
-    book: Я, робот
-    reader: User1
-    date: 21.11.2016
+    book: Война миров
+    reader: User5
+    date: 10.12.2017
   - !ruby/object:Order
     book: Я, робот
     reader: User7
-    date: 7.2.2017
+    date: 26.8.2016
   - !ruby/object:Order
     book: Я, робот
+    reader: User1
+    date: 24.10.2017
+  - !ruby/object:Order
+    book: Я, робот
+    reader: User9
+    date: 17.4.2016
+  - !ruby/object:Order
+    book: Нейромант
     reader: User3
-    date: 13.10.2018
+    date: 29.11.2017
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User6
+    date: 24.3.2017
   - !ruby/object:Order
     book: Нейромант
     reader: User8
-    date: 3.10.2016
-  - !ruby/object:Order
-    book: Нейромант
-    reader: User1
-    date: 26.3.2018
-  - !ruby/object:Order
-    book: Нейромант
-    reader: User3
-    date: 11.5.2018
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User1
-    date: 26.9.2016
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User8
-    date: 7.12.2016
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User6
-    date: 27.3.2017
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User6
-    date: 27.4.2017
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User6
-    date: 27.7.2016
-  - !ruby/object:Order
-    book: Машина времени
-    reader: User3
-    date: 2.9.2016
+    date: 20.9.2016
   - !ruby/object:Order
     book: Машина времени
     reader: User9
-    date: 12.4.2016
+    date: 2.8.2016
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User7
+    date: 2.9.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User4
+    date: 10.7.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User5
+    date: 19.11.2018
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User5
+    date: 22.9.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User8
+    date: 18.7.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User3
+    date: 30.2.2017
 - - !ruby/object:Reader
     name: User1
     email: user1@example.com
