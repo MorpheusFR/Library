@@ -38,7 +38,7 @@ module DataGenerator
     # @orders << Order.new("Война миров", "User1", "1.12.2018")
     order_generate("Война миров", 4)
     order_generate('Я, робот', 3)
-    order_generate('Нейромант', 3)
+    order_generate('Нейромант', 20)
     order_generate('Машина времени', 7)
 
   end

@@ -52,72 +52,140 @@
     author: Артур Кларк
 - - !ruby/object:Order
     book: Война миров
-    reader: User5
-    date: 20.5.2017
+    reader: User9
+    date: 29.10.2018
   - !ruby/object:Order
     book: Война миров
-    reader: User4
-    date: 27.4.2018
-  - !ruby/object:Order
-    book: Война миров
-    reader: User6
-    date: 8.1.2017
-  - !ruby/object:Order
-    book: Война миров
-    reader: User5
-    date: 10.12.2017
-  - !ruby/object:Order
-    book: Я, робот
-    reader: User7
-    date: 26.8.2016
-  - !ruby/object:Order
-    book: Я, робот
     reader: User1
-    date: 24.10.2017
+    date: 12.5.2017
+  - !ruby/object:Order
+    book: Война миров
+    reader: User8
+    date: 5.12.2018
+  - !ruby/object:Order
+    book: Война миров
+    reader: User2
+    date: 19.2.2016
+  - !ruby/object:Order
+    book: Я, робот
+    reader: User5
+    date: 18.12.2017
   - !ruby/object:Order
     book: Я, робот
     reader: User9
-    date: 17.4.2016
+    date: 27.5.2016
+  - !ruby/object:Order
+    book: Я, робот
+    reader: User6
+    date: 7.5.2016
   - !ruby/object:Order
     book: Нейромант
-    reader: User3
-    date: 29.11.2017
+    reader: User8
+    date: 30.6.2016
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User7
+    date: 29.1.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User1
+    date: 21.11.2017
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User8
+    date: 31.2.2017
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User8
+    date: 11.7.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User4
+    date: 10.6.2016
   - !ruby/object:Order
     book: Нейромант
     reader: User6
-    date: 24.3.2017
+    date: 5.9.2017
   - !ruby/object:Order
     book: Нейромант
-    reader: User8
-    date: 20.9.2016
+    reader: User2
+    date: 21.3.2017
   - !ruby/object:Order
-    book: Машина времени
-    reader: User9
-    date: 2.8.2016
+    book: Нейромант
+    reader: User2
+    date: 19.8.2016
   - !ruby/object:Order
-    book: Машина времени
+    book: Нейромант
     reader: User7
-    date: 2.9.2017
+    date: 5.1.2016
   - !ruby/object:Order
-    book: Машина времени
-    reader: User4
-    date: 10.7.2017
-  - !ruby/object:Order
-    book: Машина времени
+    book: Нейромант
     reader: User5
-    date: 19.11.2018
+    date: 3.4.2017
   - !ruby/object:Order
-    book: Машина времени
-    reader: User5
-    date: 22.9.2017
+    book: Нейромант
+    reader: User9
+    date: 21.5.2016
   - !ruby/object:Order
-    book: Машина времени
-    reader: User8
-    date: 18.7.2017
+    book: Нейромант
+    reader: User2
+    date: 28.11.2016
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User3
+    date: 4.12.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User3
+    date: 3.5.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User9
+    date: 11.2.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User7
+    date: 17.2.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User1
+    date: 28.6.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User3
+    date: 16.3.2018
+  - !ruby/object:Order
+    book: Нейромант
+    reader: User7
+    date: 7.4.2018
   - !ruby/object:Order
     book: Машина времени
     reader: User3
-    date: 30.2.2017
+    date: 21.3.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User5
+    date: 25.4.2018
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User3
+    date: 11.12.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User8
+    date: 29.5.2016
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User3
+    date: 7.7.2017
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User9
+    date: 25.7.2018
+  - !ruby/object:Order
+    book: Машина времени
+    reader: User3
+    date: 9.8.2017
 - - !ruby/object:Reader
     name: User1
     email: user1@example.com
