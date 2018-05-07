@@ -37,7 +37,7 @@ class Library
   end
 
   def info
-    puts(load_data)
+    # puts(load_data)
   end
 
   def often_takes_the_book
@@ -51,6 +51,7 @@ class Library
   end
 
   def list_top_book_user
-    the_most_popular_book.first(3).collect {|_book, order| order }.flatten.collect(&:reader).uniq.count
+    group_sort = the_most_popular_book.first(3).collect { |_book, order| order }
+    group_sort_result = group_sort.flatten.collect(&:reader).uniq.count
   end
 end

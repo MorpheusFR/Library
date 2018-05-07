@@ -9,7 +9,7 @@ library = Library.new
 # library.save_data
 
 library.load_data
-library.info
+# library.info
 
 # Resalt task
 puts "Who often takes the book: \n #{library.often_takes_the_book}"
