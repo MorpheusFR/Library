@@ -31,10 +31,7 @@ Load data
 ```
 library.load_data
 ```
-Information
-```
-library.info
-```
+
 Resalt task
 # Who often takes the book
 ```
@@ -48,13 +45,3 @@ Resalt task
 ```
 "#{library.list_top_book_user}"
 ```
-
-Expected values without data generation
-```
-Who often takes the book:
- User3
-What is the most popular book:
- Нейромант
-How many people ordered one of the three most popular books:
- 9
- ```

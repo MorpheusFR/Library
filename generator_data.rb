@@ -5,34 +5,52 @@ require_relative 'classes/author'
 require_relative 'classes/order'
 require_relative 'classes/library'
 
+# 10 books
+BOOKS_ARRAY = [
+  ['Война миров', 'Герберт Уэллс'],
+  ['Звездный десант', 'Роберт Хайнлайн'],
+  ['История будущего', 'Айзек Азимов'],
+  ['Марсианские хроники', 'Рэй Брэдбери'],
+  ['День триффидов', 'Джон Уиндэм'],
+  ['Машина времени', 'Герберт Уэллс'],
+  ['Мальвиль', 'Робер Мерль'],
+  ['Я, робот', 'Айзек Азимов'],
+  ['Нейромант', 'Уильям Гибсон'],
+  ['2001: Космическая Одиссея', 'Артур Кларк']
+].freeze
+
+# 7 authors
+AUTHORS_ARRAY = [
+  ['Герберт Уэллс', 'Bio Герберт Уэллс'],
+  ['Роберт Хайнлайн', 'Bio Роберт Хайнлайн'],
+  ['Айзек Азимов', 'Bio Айзек Азимов'],
+  ['Рэй Брэдбери', 'Bio Рэй Брэдбери'],
+  ['Джон Уиндэм', 'Bio Джон Уиндэм'],
+  ['Робер Мерль', 'Bio Робер Мерль'],
+  ['Артур Кларк', 'Bio Артур Кларк']
+].freeze
+
 # modul DataGenerator
 module DataGenerator
-  def book_data
-    # 10 books
-    @books << Book.new('Война миров', 'Герберт Уэллс')
-    @books << Book.new('Звездный десант', 'Роберт Хайнлайн')
-    @books << Book.new('История будущего', 'Айзек Азимов')
-    @books << Book.new('Марсианские хроники', 'Рэй Брэдбери')
-    @books << Book.new('День триффидов', 'Джон Уиндэм')
-    @books << Book.new('Машина времени', 'Герберт Уэллс')
-    @books << Book.new('Мальвиль', 'Робер Мерль')
-    @books << Book.new('Я, робот', 'Айзек Азимов')
-    @books << Book.new('Нейромант', 'Уильям Гибсон')
-    @books << Book.new('2001: Космическая Одиссея', 'Артур Кларк')
+  def books_data(books_array)
+    counter = 0
+    while counter < books_array.length
+      @books << Book.new(books_array[counter].first,
+                         books_array[counter].last)
+      counter += 1
+    end
   end
 
-  def authors_data
-    # 7 authors
-    @authors << Author.new('Герберт Уэллс', 'Bio Герберт Уэллс')
-    @authors << Author.new('Роберт Хайнлайн', 'Bio Роберт Хайнлайн')
-    @authors << Author.new('Айзек Азимов', 'Bio Айзек Азимов')
-    @authors << Author.new('Рэй Брэдбери', 'Bio Рэй Брэдбери')
-    @authors << Author.new('Джон Уиндэм', 'Bio Джон Уиндэм')
-    @authors << Author.new('Робер Мерль', 'Bio Робер Мерль')
-    @authors << Author.new('Артур Кларк', 'Bio Артур Кларк')
+  def authors_data(authors_array)
+    counter = 0
+    while counter < authors_array.length
+      @authors << Author.new(authors_array[counter].first,
+                             authors_array[counter].last)
+      counter += 1
+    end
   end
 
-  def data_generate
+  def readers_data
     i = 1
     while i < 10
       @readers << Reader.new("User#{i}",
@@ -42,15 +60,6 @@ module DataGenerator
                              "house#{i}")
       i += 1
     end
-
-    book_data()
-    authors_data()
-
-    # 4 orders generator in range order_count
-    order_generate('Война миров', 4)
-    order_generate('Я, робот', 3)
-    order_generate('Нейромант', 20)
-    order_generate('Машина времени', 7)
   end
 
   def order_generate(book, order_count)
@@ -59,5 +68,17 @@ module DataGenerator
                            "User#{rand(1..9)}",
                            "#{rand(1..31)}.#{rand(1..12)}.20#{rand(16..18)}")
     end
+  end
+
+  def data_generate
+    books_data(BOOKS_ARRAY)
+    authors_data(AUTHORS_ARRAY)
+    readers_data
+
+    # 4 orders generator in range order_count
+    order_generate('Война миров', 4)
+    order_generate('Я, робот', 3)
+    order_generate('Нейромант', 20)
+    order_generate('Машина времени', 7)
   end
 end

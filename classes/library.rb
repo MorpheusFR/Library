@@ -5,7 +5,7 @@ require 'yaml'
 # {project_root}/generator_data.rb
 class Library
   include DataGenerator
-  PATH = './backup/backup_yaml.yml'
+  PATH_TO_DATA = './backup/backup_yaml.yml'.freeze
 
   attr_accessor :authors, :books, :orders, :readers
 
@@ -19,13 +19,11 @@ class Library
   def save_data
     backup = []
     backup.push @authors, @books, @orders, @readers
-    File.write(PATH, backup.to_yaml)
-    # File.write("./backup/save_load.txt", "#{backup}")
+    File.write(PATH_TO_DATA, backup.to_yaml)
   end
 
   def load_data
-    p data = YAML.load(File.open(PATH))
-    # p data
+    data = YAML.load(File.open(PATH_TO_DATA))
     # "@authors"
     @authors = data[0]
     # "@books"
@@ -34,10 +32,6 @@ class Library
     @orders = data[2]
     # "@readers"
     @readers = data[3]
-  end
-
-  def info
-    # puts(load_data)
   end
 
   def often_takes_the_book
