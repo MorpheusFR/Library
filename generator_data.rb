@@ -1,4 +1,3 @@
-# {project_root}/generator_data.rb
 require_relative 'classes/reader'
 require_relative 'classes/book'
 require_relative 'classes/author'
@@ -76,9 +75,9 @@ module DataGenerator
     readers_data
 
     # 4 orders generator in range order_count
-    order_generate('Война миров', 4)
-    order_generate('Я, робот', 3)
-    order_generate('Нейромант', 20)
+    order_generate('Война миров', 14)
+    order_generate('Я, робот', 13)
+    order_generate('Нейромант', 21)
     order_generate('Машина времени', 7)
   end
 end

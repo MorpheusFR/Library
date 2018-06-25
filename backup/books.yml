@@ -1,0 +1,31 @@
+---
+- !ruby/object:Book
+  titile: Война миров
+  author: Герберт Уэллс
+- !ruby/object:Book
+  titile: Звездный десант
+  author: Роберт Хайнлайн
+- !ruby/object:Book
+  titile: История будущего
+  author: Айзек Азимов
+- !ruby/object:Book
+  titile: Марсианские хроники
+  author: Рэй Брэдбери
+- !ruby/object:Book
+  titile: День триффидов
+  author: Джон Уиндэм
+- !ruby/object:Book
+  titile: Машина времени
+  author: Герберт Уэллс
+- !ruby/object:Book
+  titile: Мальвиль
+  author: Робер Мерль
+- !ruby/object:Book
+  titile: Я, робот
+  author: Айзек Азимов
+- !ruby/object:Book
+  titile: Нейромант
+  author: Уильям Гибсон
+- !ruby/object:Book
+  titile: '2001: Космическая Одиссея'
+  author: Артур Кларк

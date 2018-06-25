@@ -1,0 +1,55 @@
+---
+- !ruby/object:Reader
+  name: User1
+  email: user1@example.com
+  city: city1
+  street: street1
+  house: house1
+- !ruby/object:Reader
+  name: User2
+  email: user2@example.com
+  city: city2
+  street: street2
+  house: house2
+- !ruby/object:Reader
+  name: User3
+  email: user3@example.com
+  city: city3
+  street: street3
+  house: house3
+- !ruby/object:Reader
+  name: User4
+  email: user4@example.com
+  city: city4
+  street: street4
+  house: house4
+- !ruby/object:Reader
+  name: User5
+  email: user5@example.com
+  city: city5
+  street: street5
+  house: house5
+- !ruby/object:Reader
+  name: User6
+  email: user6@example.com
+  city: city6
+  street: street6
+  house: house6
+- !ruby/object:Reader
+  name: User7
+  email: user7@example.com
+  city: city7
+  street: street7
+  house: house7
+- !ruby/object:Reader
+  name: User8
+  email: user8@example.com
+  city: city8
+  street: street8
+  house: house8
+- !ruby/object:Reader
+  name: User9
+  email: user9@example.com
+  city: city9
+  street: street9
+  house: house9

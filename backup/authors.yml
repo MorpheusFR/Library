@@ -1,0 +1,22 @@
+---
+- !ruby/object:Author
+  name: Герберт Уэллс
+  biography: Bio Герберт Уэллс
+- !ruby/object:Author
+  name: Роберт Хайнлайн
+  biography: Bio Роберт Хайнлайн
+- !ruby/object:Author
+  name: Айзек Азимов
+  biography: Bio Айзек Азимов
+- !ruby/object:Author
+  name: Рэй Брэдбери
+  biography: Bio Рэй Брэдбери
+- !ruby/object:Author
+  name: Джон Уиндэм
+  biography: Bio Джон Уиндэм
+- !ruby/object:Author
+  name: Робер Мерль
+  biography: Bio Робер Мерль
+- !ruby/object:Author
+  name: Артур Кларк
+  biography: Bio Артур Кларк
