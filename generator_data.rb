@@ -63,7 +63,7 @@ module DataGenerator
 
   def order_generate(book, order_count)
     order_count.times do
-      @orders << Order.new("#{book}",
+      @orders << Order.new(book.to_s,
                            "User#{rand(1..9)}",
                            "#{rand(1..31)}.#{rand(1..12)}.20#{rand(16..18)}")
     end

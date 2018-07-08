@@ -1,3 +1,4 @@
+# Class Author
 class Author
   attr_reader :name, :biography
 
